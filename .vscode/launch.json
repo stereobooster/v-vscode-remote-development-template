@@ -5,11 +5,13 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "VLangg: Current File",
-            "type": "v",
+            "preLaunchTask": "build debug",
+            "type": "gdb",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+            "name": "VLang: debug with GDB",
+            "target": "./build/hello_world",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
         }
     ]
 }
